@@ -40,3 +40,11 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
+// dark mood
+
+const darkIcon =document.querySelector("#moon");
+darkIcon.onclick = () => {
+  document.body.classList.toggle("dark-theme");
+  
+
+}

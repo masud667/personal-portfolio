@@ -13,16 +13,28 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Serif', serif;
+  
 }
 
 body{
     overflow-x: hidden;
-    background-color: white;
+      background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
-
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+   
+}
+.dark-theme{
+     --primary-color: #000106;
+    --secondary-color: #fff;
+}
 /* vertical navigation */
+
+
 .vertical-nav{
-    background-color: white;
+    background-color: var(--primary-color);
     min-width: 17rem;
     width: 17rem;
     height: 100vh;
@@ -31,6 +43,25 @@ body{
     left: 0;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.moon{
+    font-size: 1.7em;
+    position: absolute;
+    top: 1rem;
+    left: .6rem;
+    background: white;
+    padding: .3rem;
+    border-radius: 100px;
+}
+.sun{
+    font-size: 1.7em;
+    position: absolute;
+    top: 1rem;
+    left: .6rem;
+    background: white;
+    padding: .3rem;
+    border-radius: 100px;
+    opacity: 0;
 }
 .brand{
     width: 100%; 
@@ -46,7 +77,7 @@ body{
     font-size: 1rem;
     font-family: 'Handlee', cursive;
     font-weight: bolder;
-    color: black;
+    color: var(--secondary-color);
     letter-spacing: 10px;
     position: relative;
     left: 0%;
@@ -56,7 +87,7 @@ body{
 .brand-img{
     width: 100px;
     background-color: #EAE509;
-    border: 5px solid white;
+    border: 5px solid var(--primary-color);
     border-radius: 100px;
     position: absolute;
     top: 70px;
@@ -64,7 +95,7 @@ body{
     transition: .5s;
 }
 .navbar-nav a{
-    color: black;
+    color: var(--secondary-color);
     font-weight: 700;
     font-size: 1.4rem;
     margin-left: 2.5rem;
@@ -82,13 +113,13 @@ body{
 
 .social-media a{
     font-size: 20px;
-    color: black;
+    color: var(--secondary-color);
 }
 
 /* content page  */
 
 .page-content{
-    background-color:white;
+    background-color:var(--primary-color);
     max-width: calc(100% - 17rem);
     height: 100vh;
     margin-left: 17.2rem;
@@ -97,7 +128,7 @@ body{
 .content-img{
     background-color: #42855B;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 5px solid var(--primary-color);
     position: relative;
     width: 600px;
     top: -20px;
@@ -106,6 +137,7 @@ body{
 }
 .header-title{
     padding: 100px 0px;
+    color: var(--secondary-color);
 }
 .name-title{
     font-family: 'DynaPuff', cursive;
@@ -157,15 +189,15 @@ body{
 
 .social-media-s2 a{
     font-size: 20px;
-    color: black;
+    color: var(--secondary-color);
 }
 .btn-dev{
     text-align: center;
     margin: 10px;
 }
 .btn-dev a{
-    color: black;
-    background-color: white;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
     text-decoration: none;
     width: 150px;
     font-size: 1.2rem;
@@ -178,24 +210,30 @@ body{
 }
 
 .hire-me-btn:hover{
-    color: white;
+    color: var(--secondary-color);
     background-color: rgb(255, 0, 60);
 }
 /* responsible part */
 
 
 /* about section  */
+.about-section{
+    
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 
+}
 .brand-img-2{
         width: 200px;
         background-color: #37E2D5;
-        border: 5px solid white;
+        border: 5px solid var(--secondary-color);
         border-radius: 100px;
         transition: .5s;
 }
 .about-para-sec{
-    background-color: #F6FBF4;
+    background-color: var(--primary-color);
     height: 120vh;
+    color: var(--secondary-color);
     border-radius: 50px;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
@@ -213,20 +251,32 @@ body{
 .skills{
     max-width: 500px;
     margin: 0 auto;
+    color: var(--secondary-color);
+}
+.table .star{
+    color: var(--secondary-color);
+}
+.table .td{
+    color: var(--secondary-color);
 }
 
 
 /* service section  */
+
+.services{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
 .col-no-1{
-    background-color: black;
-    color: white;
+    background-color: #42855B;
+    color: var(--primary-color);
     border-radius: 5px;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     transition: 1s;
 }
 .col-no-1:hover{
-    background-color: white;
-    color: black;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 5px;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     transform: scaleY(1.1);
@@ -234,7 +284,7 @@ body{
 .col-no-1 .s-icon{
     color: orangered;
     font-size: 50px;
-    background-color: white;
+    background-color: var(--primary-color);
     padding: 15px;
     border-radius: 50%;
 }
@@ -252,7 +302,7 @@ body{
 }
 
 .services .view-all{
-    color: white;
+    color: var(--secondary-color);
     background-color: #42855B;
     border: #42855B;
     text-decoration: none;
@@ -267,20 +317,34 @@ body{
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
+   color: var(--secondary-color);
 }
 
+.client-review{
+      background-color: var(--primary-color);
+   color: var(--secondary-color);
+}
 
 /* work section  */
-
+.works{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+}
 .work-img{
     max-width: 200px;
     height: 200px;
 }
-
+.section-title{
+     background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
 .work-row{
     align-items: center;
     justify-content: center;
-    margin: 25px 0 25px 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 .w-pro-div{
     background-color: #42855B;
@@ -293,7 +357,9 @@ body{
     transition: 1s;
 }
 .w-pro-div:hover{
-    background-color: white;
+    background-color: var(--primary-color);
+    
+    margin: 25px 0 25px 0;
   transform: scale(1.1);
 }
 .work-para{
@@ -322,10 +388,7 @@ body{
     width: 100px;
     margin: auto;
 }
-.client-review{
-    background-color: white;
-    margin-bottom: 30px;
-}
+
 .carousel-img{
     margin: 0 auto;
     width: 6.2rem;
@@ -361,6 +424,7 @@ body{
 .card-body .blog-para{
     padding-top: 20px;
     font-style: italic;
+    color: var(--primary-color);
 }
 .card-body .blog-date{
     opacity: 50%;
@@ -373,6 +437,10 @@ body{
 
 
 /* contact part */
+.contact-heading .co-p{
+    color: var(--secondary-color);
+}
+
 .contact-p{
     color:  rgb(255, 0, 60);
 }
@@ -447,10 +515,10 @@ body{
 }
 .submit-btn input{
     font-size: 1.2rem;
-    color: black;
     padding: 5px 15px 5px 15px;
+    color: var(--secondary-color);
     outline: none;
-    background-color: #fff;
+    background-color: var(--primary-color);
     border: 1px solid #42855B;
     border-radius: 25px;
     transition: .8s;
@@ -465,7 +533,7 @@ transform: translate(1.1);
 
 @media(max-width: 768px){
     .vertical-nav{
-        background-color: white;
+        background-color: var(--primary-color);
         min-width: 10rem;
         width: 10rem;
         height: 100vh;
@@ -487,7 +555,7 @@ transform: translate(1.1);
         font-size: .6rem;
         font-family: 'Handlee', cursive;
         font-weight: bolder;
-        color: black;
+        color: var(--secondary-color);
         letter-spacing: 10px;
         position: relative;
         left: 0%;
@@ -507,7 +575,7 @@ transform: translate(1.1);
         transition: .5s;
     }
     .navbar-nav a{
-        color: black;
+        color: var(--secondary-color);
         font-weight: 700;
         font-size: .8rem;
         margin-left: 1.5rem;
@@ -525,18 +593,18 @@ transform: translate(1.1);
     
     .social-media a{
         font-size: 10px;
-        color: black;
+        color: var(--secondary-color);
     }
     
     .page-content{
-        background-color:white;
+        background-color:var(--primary-color);
         max-width: calc(100% - 10rem);
         height: 100vh;
         margin-left: 13.2rem;
     
     }
     .content-img{
-        background-color: green;
+        background-color: #42855B;
         border-radius: 50%;
         border: 5px solid white;
         position: relative;
